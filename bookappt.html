@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="logo.jpeg" />
+    <title>TrustCare Hospital-Appointment Booking</title>
+</head>
+<header>
+    <div class="logo">
+        <img src="logo.jpeg" alt="Hospital logo">
+        <h2>TrustCare Hospital</h2>
+        <div class="menu-icon">&#9776;</div>
+    
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="bookappt.html">Book Appointment</a></li>
+            <li><a href="blogs.html">Our Blogs</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+
+<body>
+    
+    <div class="container" id="co_form" style="width: 60%; height: 70%;margin-top: 1px; margin-bottom: 1px;">
+        <form action="#">
+            <legend style="text-align: center;"><b>BOOK YOUR APPOINTMENT</b></legend>
+            <br>
+            <div class="details1">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"placeholder="Enter your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+            </div>
+            <div class="details2">
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" minlength="10" required>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select name="gen" id="gender">
+                        <option value="se">Select your gender</option>
+                        <option value="mal">Male</option>
+                        <option value="fem">Female</option>
+                        <option value="oth">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div id="timing">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+        
+    </div>
+
+    <footer>
+        <h2>Stay in Touch</h2>
+        <div class="social_icons">
+            <a href="https://www.instagram.com"><img src="instagram.png" alt="insta" class="insta"></a>
+            <a href="https://www.youtube.com"><img src="youtube.png" alt="utube"></a>
+            <a href="https://www.twitter.com"><img src="twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com"><img src="facebook.png" alt="fb"></a>
+        </div>
+    </footer>
+    <script src="menu_icon.js"></script>
+</body>
+</html>

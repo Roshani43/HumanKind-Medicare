@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #074867;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  padding: 10px;
+  background-color: #1fb1f5;
+  display: flex;
+  align-items: center;
+  color: rgb(12, 169, 33);
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.logo h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.navbar {
+  color: white;
+  margin-left: auto;
+  /* Move the navbar to the extreme right */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 15px;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: #1985dd;
+}
+
+
+.symbol {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  height: 10px;
+}
+
+.container {
+  text-align: left;
+  margin: 20px;
+  background-color: white;
+  height: 20%;
+
+}
+
+.docProfile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 20%;
+}
+
+.edu {
+  background: white;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+.content {
+  background: white;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(224, 220, 220);
+
+}
+
+.whole {
+  display: flex;
+}
+
+.container{
+  width: 60%;
+}
+
+.about {
+  background: white;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #1fb1f5;
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  /* position: absolute;
+  bottom: 0; */
+  margin-top: auto;
+  width: 100%;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h2 {
+  padding-top: 10px;
+}
+
+.social_icons img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+  /* Hide by default on larger screens */
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+      display: none;
+      /* Hide navigation links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      /* Adjust as needed*/
+      right: 0px;
+      background-color: #1fb1f5;
+      z-index: 1;
+  }
+
+  .navbar ul.show {
+      display: flex;
+      /* Show navigation links when the class 'show' is added */
+      width: 200px;
+      margin-top: 10px;
+  }
+
+  .navbar li {
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+  }
+
+  .menu-icon {
+      display: block;
+      /* Show hamburger menu icon on smaller screens */
+      position: absolute;
+      right: 10px;
+      color: white;
+  }
+
+  .whole{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    width: 80%;
+  }
+  
+}
